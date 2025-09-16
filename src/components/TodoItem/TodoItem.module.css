@@ -1,0 +1,36 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #f1f3f5;
+  user-select: none;
+}
+
+.todoText {
+  flex-grow: 1;
+  cursor: pointer;
+
+  &.done {
+    text-decoration: line-through;
+    color: #adb5bd;
+  }
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+}
+
+.trash {
+  color: gray;
+  font-size: 16px;
+}
