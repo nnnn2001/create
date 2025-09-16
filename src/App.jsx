@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import styles from './App.module.css';
-import { Panel } from './components/Panel';
-import { TodoItem } from './components/TodoItem';
-import { nanoid } from 'nanoid';
+
 
 function App() {
   const [todos, setTodos] = useState([
