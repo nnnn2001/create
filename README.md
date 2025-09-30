@@ -1,12 +1,10 @@
-# React + Vite
+JSX의 주요 규칙 3가지
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 하나의 부모 요소로 감싸기
+컴포넌트가 반환하는 모든 JSX 요소는 반드시 <div> 나 <> 같은 하나의 태그로 감싸져 있어야 한다.
 
-Currently, two official plugins are available:
+## 태그 닫기
+<input>이나 <br>처럼 HTML에서는 닫는 태그가 없었던 요소들도 JSX에서는 <input />, <br />처럼 항상 태그를 닫아주어야 한다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## className 사용
+CSS 클래스를 지정할 때는 HTML의 class 속성 대신, JavaScript의 예약어와 충돌을 피하기 위해 className을 사용해야 한다.
